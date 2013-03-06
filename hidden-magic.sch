@@ -1,47 +1,55 @@
-v 20091004 2
+v 20100214 2
 C 40000 40000 0 0 0 title-C.sym
-T 41100 40400 9 25 1 0 0 0 2
-This is where I deal with some issues in the netlisting of 
-components with not easily graphically articulated properties.
-N 46500 50000 51500 50000 4
+C 51100 49100 1 0 0 AMPHENOL_BNC_31-5431-pt2.sym
 {
-T 48200 50000 5 10 1 1 0 0 1
-netname=Chassis
-}
-N 50900 50400 51500 50400 4
-C 49900 50300 1 0 0 AMPHENOL_BNC_31-5431-pt2.sym
-{
-T 50310 51150 5 10 0 0 0 0 1
-device=Dual_Two_Way_Switch
-T 50510 51100 5 10 1 1 0 3 1
+T 51510 49950 5 10 0 0 0 0 1
+device=BNC Connector
+T 51610 49900 5 10 1 1 0 3 1
 refdes=CONN2
-T 50600 52000 5 10 0 0 0 0 1
+T 51800 50800 5 10 0 0 0 0 1
 symversion=1.0
-T 50495 50950 5 10 1 1 0 3 1
+T 51595 49750 5 10 1 1 0 3 1
 model-name=AMPHENOL_BNC_31-5431
-T 50495 50750 5 10 1 1 0 3 1
-footprint=AMPHENOL_BNC_31-5431-short.fp
+T 51595 49550 5 10 1 1 0 3 1
+footprint=AMPHENOL_BNC_31-5431.fp
 }
-N 51500 50400 51500 50000 4
-N 49900 50400 49000 50400 4
-N 49000 50400 49000 50000 4
-T 45400 48600 9 10 1 0 0 0 4
-The chassis ground is meant to run the length of the equilizer. 
-This will reduce cross talk between units when it is tiled. To 
-save time and agervation there is an extra Chassis connection 
-to jumper multiple boards.
-C 47800 50400 1 90 0 jumper-1.sym
+C 52100 47700 1 90 0 jumper-1.sym
 {
-T 47300 50700 5 8 0 0 90 0 1
+T 51600 48000 5 8 0 0 90 0 1
 device=JUMPER
-T 47300 51100 5 10 1 1 0 3 1
+T 51600 48200 5 10 1 1 0 3 1
 refdes=J1
-T 47300 50700 5 10 1 1 0 3 1
+T 51600 48000 5 10 1 1 0 3 1
 footprint=JUMPER2
-T 47300 50900 5 10 1 1 0 3 1
-comment=Chassis
 }
-N 46800 50500 46500 50500 4
-N 46500 50500 46500 50000 4
-N 47800 50500 48100 50500 4
-N 48100 50500 48100 50000 4
+N 51100 47800 50600 47800 4
+N 50600 47800 50600 49200 4
+N 50600 49200 51100 49200 4
+N 52100 49200 52600 49200 4
+N 52600 49200 52600 47800 4
+N 52600 47800 52100 47800 4
+N 50600 48800 52600 48800 4
+T 55000 40700 9 10 1 0 0 0 1
+Equilizer Channel Hidden Magic
+T 54900 40400 9 10 1 0 0 0 1
+hidden-magic.sch
+T 55000 40100 9 10 1 0 0 0 1
+2
+T 56500 40100 9 10 1 0 0 0 1
+2
+T 58800 40400 9 10 1 0 0 0 1
+1.0
+T 58900 40100 9 10 1 0 0 0 1
+EEF
+T 60700 40400 14 8 1 0 0 6 1
+DESIGN:
+T 60800 40400 9 10 1 0 0 0 1
+IJS
+T 60800 40100 9 10 1 0 0 0 1
+2010.06.06
+T 60700 40100 14 8 1 0 0 6 1
+DATE:
+T 40500 40500 9 25 1 0 0 0 3
+This is where I deal with some issues in the 
+netlisting of things that are not explainable 
+graphically.

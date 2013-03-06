@@ -1,7 +1,7 @@
-# release: pcb 20091103
-# date:    Mon May 10 17:18:43 2010
-# user:    fosse ()
-# host:    EPLEng_EEF
+# release: pcb 20081128
+# date:    Mon Jun  7 07:02:35 2010
+# user:    user1 ()
+# host:    presario1600
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -797,6 +797,10 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
+Via[33500 132100 6000 2000 0 3500 "" ""]
+Via[50500 138500 6000 2000 0 3500 "" ""]
+Via[33500 107807 6000 2000 0 3500 "" ""]
+Via[51807 89500 6000 2000 0 3500 "" ""]
 
 Element["" "CDRH6D28.fp" "L1" "100uH" 42654 98653 -22244 2363 1 100 ""]
 (
@@ -807,19 +811,6 @@ Element["" "CDRH6D28.fp" "L1" "100uH" 42654 98653 -22244 2363 1 100 ""]
 	ElementLine [15354 -15355 15354 15354 1000]
 	ElementLine [-15354 15354 15354 15354 1000]
 	ElementLine [-16340 16338 -16340 16338 1000]
-
-	)
-
-Element["" "ACY600" "R1" "22" 32000 188500 -12000 -27500 1 100 ""]
-(
-	Pin[0 0 8000 3000 8600 5000 "1" "1" "square"]
-	Pin[0 -60000 8000 3000 8600 5000 "2" "2" ""]
-	ElementLine [0 -15000 0 0 1000]
-	ElementLine [0 -60000 0 -45000 1000]
-	ElementLine [-5000 -45000 -5000 -15000 1000]
-	ElementLine [-5000 -45000 5000 -45000 1000]
-	ElementLine [5000 -45000 5000 -15000 1000]
-	ElementLine [-5000 -15000 5000 -15000 1000]
 
 	)
 
@@ -938,7 +929,7 @@ Element["" "ACY600" "C1" "2.2uF" 72000 152000 -12000 -27000 1 100 ""]
 
 	)
 
-Element["" "JUMPER2" "CONN1" "unknown" 62000 183000 2500 11500 2 100 ""]
+Element["" "JUMPER2" "CONN1" "unknown" 39500 165500 2500 11500 2 100 ""]
 (
 	Pin[0 0 7000 3000 7600 3800 "1" "1" "square,edge2"]
 	Pin[-10000 0 7000 3000 7600 3800 "2" "2" "edge2"]
@@ -951,46 +942,55 @@ Element["" "JUMPER2" "CONN1" "unknown" 62000 183000 2500 11500 2 100 ""]
 
 	)
 
-Element["" "JUMPER2" "J1" "unknown" 76000 165500 5000 11000 2 100 ""]
+Element["" "2512" "R1" "22" 42100 135300 -3000 -12500 0 100 ""]
 (
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,edge2"]
-	Pin[-10000 0 6000 3000 6600 3800 "2" "2" "edge2"]
-	ElementLine [-5000 5000 5000 5000 1000]
-	ElementLine [-5000 -5000 -5000 5000 1000]
-	ElementLine [5000 -5000 5000 5000 1000]
-	ElementLine [-15000 5000 5000 5000 1000]
-	ElementLine [-15000 -5000 -15000 5000 1000]
-	ElementLine [-15000 -5000 5000 -5000 1000]
+	Pad[-8600 -3200 -8600 3200 6400 2000 8400 "1" "1" "square"]
+	Pad[8400 -3200 8400 3200 6400 2000 8400 "2" "2" "square"]
+	ElementLine [9500 -4700 9500 4600 600]
+	ElementLine [-9600 4600 9500 4600 600]
+	ElementLine [-9600 -4700 -9600 4600 600]
+	ElementLine [-9600 -4700 9500 -4700 600]
 
 	)
+
+Element["selected" "JUMPER2" "J1" "unknown" 119500 163000 -5000 -11000 0 100 "selected"]
+(
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "selected,square,edge2"]
+	Pin[10000 0 6000 3000 6600 3800 "2" "2" "selected,edge2"]
+	ElementLine [-5000 -5000 5000 -5000 1000]
+	ElementLine [5000 -5000 5000 5000 1000]
+	ElementLine [-5000 -5000 -5000 5000 1000]
+	ElementLine [-5000 -5000 15000 -5000 1000]
+	ElementLine [15000 -5000 15000 5000 1000]
+	ElementLine [-5000 5000 15000 5000 1000]
+
+	)
+Rat[119500 163000 1 129500 163000 1  ""]
 Layer(1 "component")
 (
 	Line[51807 89500 50000 64000 3500 2000 "clearline"]
 	Line[33500 89500 40000 64000 3500 2000 "clearline"]
 	Line[54307 92000 51807 89500 2500 2000 "clearline"]
 	Line[72000 92000 54307 92000 3500 2000 "clearline"]
-	Line[33500 107807 33500 117000 3500 2000 "clearline"]
-	Line[33500 117000 40000 123500 3500 2000 "clearline"]
-	Line[40000 123500 47500 123500 3500 2000 "clearline"]
-	Line[47500 123500 52000 128000 3500 2000 "clearline"]
-	Line[52000 128000 52000 183000 3500 2000 "clearline"]
-	Text[40000 153000 1 99 "Equilizer" ""]
+	Line[33500 107807 33500 108000 4000 2000 "clearline"]
+	Line[33500 108000 22000 119500 4000 2000 "clearline"]
+	Line[22000 119500 22000 158000 4000 2000 "clearline"]
+	Line[22000 158000 29500 165500 4000 2000 "clearline"]
+	Line[72000 152000 50500 138500 4000 2000 "clearline"]
+	Line[39500 165500 33500 138500 4000 2000 "clearline"]
 )
 Layer(2 "solder")
 (
-	Line[32000 128500 72000 152000 3500 2000 "clearline"]
-	Line[32000 188500 40500 188500 2500 2000 "clearline"]
-	Line[40500 188500 44500 192500 2500 2000 "clearline"]
-	Line[44500 192500 58500 192500 2500 2000 "clearline"]
-	Line[58500 192500 62000 189000 2500 2000 "clearline"]
-	Line[62000 189000 62000 183000 2500 2000 "clearline"]
+	Line[76000 165500 80500 161000 4000 2000 "clearline"]
+	Line[33500 107807 33500 108000 4000 2000 "clearline"]
 	Line[66000 165500 76000 165500 2500 2000 "clearline"]
 	Line[70000 40000 30000 40000 4000 2000 "clearline"]
-	Line[76000 165500 80500 161000 4000 2000 "clearline"]
-	Line[80500 161000 80500 50500 4000 2000 "clearline"]
 	Line[80500 50500 70000 40000 4000 2000 "clearline"]
-	Line[76000 165500 76000 187500 4000 2000 "clearline"]
-	Line[76000 187500 72000 191500 4000 2000 "clearline"]
+	Line[80500 161000 80500 50500 4000 2000 "clearline"]
+	Text[42000 128500 0 99 "Equilizer" "auto"]
+	Text[34500 120500 0 99 "EPL 2010.05.11" "auto"]
+	Text[40307 113307 0 99 "Design IJS" "auto"]
+	Text[42500 105000 0 99 "PCB EEF" "auto"]
 )
 Layer(3 "outline")
 (
@@ -1015,23 +1015,15 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
-	Line[17500 13000 17500 190500 1000 2000 "clearline"]
-	Line[17500 190500 23000 196000 1000 2000 "clearline"]
-	Line[23000 196000 79500 196000 1000 2000 "clearline"]
-	Line[79500 196000 85000 190500 1000 2000 "clearline"]
-	Line[85000 190500 85000 13000 1000 2000 "clearline"]
+	Line[17500 13000 17500 175500 1000 2000 "clearline"]
+	Line[85000 175500 85000 13000 1000 2000 "clearline"]
+	Line[17500 175500 23000 181000 1000 2000 "clearline"]
+	Line[23000 181000 79500 181000 1000 2000 "clearline"]
+	Line[79500 181000 85000 175500 1000 2000 "clearline"]
 	Text[74000 176500 2 99 "Chassis" ""]
-	Text[53000 161000 1 99 "Electronics IJS" ""]
-	Text[59500 153000 1 99 "PCB EEF" ""]
-	Text[47000 161000 1 99 "EPL 2010.05.10" ""]
 )
 NetList()
 (
-	Net("Chassis_GND" "(unknown)")
-	(
-		Connect("J1-1")
-		Connect("J1-2")
-	)
 	Net("unnamed_net1" "(unknown)")
 	(
 		Connect("C1-1")
@@ -1053,5 +1045,10 @@ NetList()
 	(
 		Connect("CONN1-1")
 		Connect("R1-1")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("J1-1")
+		Connect("J1-2")
 	)
 )
