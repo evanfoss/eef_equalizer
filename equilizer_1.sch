@@ -1,4 +1,4 @@
-v 20100214 2
+v 20121123 2
 C 40000 40000 0 0 0 title-B.sym
 C 49300 46300 1 0 0 capacitor-1.sym
 {
@@ -71,7 +71,7 @@ refdes=CONN2
 T 54100 46900 5 10 1 1 0 6 1
 model-name=AMPHENOL_BNC_31-5431
 T 54100 46700 5 10 1 1 0 6 1
-footprint=AMPHENOL_BNC_31-5431-short
+footprint=AMPHENOL_BNC_31-5431-ver2
 T 54100 47300 5 10 1 1 0 6 1
 comment=Output
 T 54100 47100 5 10 1 1 0 6 1
