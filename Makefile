@@ -25,6 +25,10 @@ SCHFLAGS = -q
 SCHLIB = gschlas
 SCHLIBFLAGS = -e
 #
+#
+PCBVIEW = gerbv
+PCBVIEWFLAGS = 
+#
 # Simulation Tool
 SIMTOOL = gspiceui
 SIMFLAGS = 
@@ -64,8 +68,8 @@ pcb:	drc
 	gsch2pcb equilizer.prj
 	pcb equilizer.pcb
 
-gerbv:	pcb
-	$(PCBVIEW) $(PCBVIEWFLAGS) 
+gerbv:
+	$(PCBVIEW) $(PCBVIEWFLAGS) equilizer.fab.gbr equilizer.plated-drill.cnc equilizer.topsilk.gbr equilizer.top.gbr equilizer.toppaste.gbr equilizer.topmask.gbr equilizer.bottom.gbr equilizer.bottommask.gbr 
 
 clean:
 	rm *.net
