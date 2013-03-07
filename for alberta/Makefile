@@ -47,12 +47,13 @@ all:
 
 orderapc:
 	echo "Be sure to edit orderform.txt and README.ME."
-	mv equilizer.frontsilk.gbr cslk.gbr
-	mv equilizer.front.gbr compont.gbr
-	mv equilizer.frontmask.gbr cmsk.gbr
-	mv equilizer.back.gbr solder.gbr
-	mv equilizer.backmask.gbr smsk.gbr
-	mv equilizer.plated-drill.cnc drill.cnc
-	#rm equilizer.fab.gbr
-	#zip -jk micamp-apcorder.zip *.gbr drill.cnc orderform.txt READ.ME
+	mv pair.topsilk.gbr cslk.gbr
+	mv pair.top.gbr compont.gbr
+	mv pair.topmask.gbr cmsk.gbr
+	mv pair.bottom.gbr solder.gbr
+	mv pair.bottommask.gbr smsk.gbr
+	mv pair.plated-drill.cnc drill.cnc
+	mv pair.fab.gbr fab.gbr
+	mv pair.outline.gbr outline.gbr
+	zip -jk micamp-apcorder.zip cslk.gbr compont.gbr cmsk.gbr solder.gbr smsk.gbr fab.gbr drill.cnc orderform.txt READ.ME
 
