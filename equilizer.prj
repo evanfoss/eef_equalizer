@@ -1,4 +1,0 @@
-elements-dir ./foot
-schematics equilizer_1.sch hidden-magic.sch
-output-name equilizer
-gsch2pcb:use-m4:            yes

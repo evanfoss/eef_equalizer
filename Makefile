@@ -18,7 +18,7 @@ MATHTOOL = sage
 MATHFLAGS = 
 #
 # Schematic Capture
-SCHTOOL = gschem
+SCHTOOL = lepton-schematic
 SCHFLAGS = -q
 #
 # Schematic Library
@@ -64,9 +64,8 @@ sim:	net
 	$(SIMTOOL) $(SIMFLAGS) >> graph.dat
 	$(GRAPHTOOL) $(GRAPHFLAGS) graph.dat
 
-pcb:	drc
-	gsch2pcb equilizer.prj
-	pcb equilizer.pcb
+pcb:	
+	pcb-rnd equilizer.rp
 
 gerbv:
 	$(PCBVIEW) $(PCBVIEWFLAGS) equilizer.fab.gbr equilizer.plated-drill.cnc equilizer.topsilk.gbr equilizer.top.gbr equilizer.toppaste.gbr equilizer.topmask.gbr equilizer.bottom.gbr equilizer.bottommask.gbr 
