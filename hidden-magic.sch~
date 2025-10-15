@@ -1,4 +1,4 @@
-v 20220529 2
+v 20100214 2
 C 40000 40000 0 0 0 title-C.sym
 C 51100 49100 1 0 0 AMPHENOL_BNC_31-5431-pt2.sym
 {
@@ -11,7 +11,7 @@ symversion=1.0
 T 51595 49750 5 10 1 1 0 3 1
 model-name=AMPHENOL_BNC_31-5431
 T 51595 49550 5 10 1 1 0 3 1
-footprint=AMPHENOL_BNC_31-5431.subc.lht
+footprint=AMPHENOL_BNC_31-5431.fp
 }
 C 52100 47700 1 90 0 jumper-1.sym
 {
